@@ -1,0 +1,11 @@
+// data/sampleData.json
+{
+    "users": [
+      { "name": "John Doe", "email": "john@example.com", "password": "password" }
+    ],
+    "transactions": [
+      { "userId": "someUserId", "amount": 100, "date": "2023-01-01T00:00:00Z", "type": "income" },
+      { "userId": "someUserId", "amount": 50, "date": "2023-01-02T00:00:00Z", "type": "expense" }
+    ]
+  }
+  

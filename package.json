@@ -1,0 +1,42 @@
+{
+  "name": "financial-analytics-platform",
+  "version": "1.0.0",
+  "description": "The Financial Analytics Platform is an AI-powered web application designed to provide insights and analytics on financial data. It allows users to manage their financial transactions and receive detailed analytics based on their data.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js",
+    "install-all": "npm install && cd client && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fordefam12/financial-analytics-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fordefam12/financial-analytics-platform/issues"
+  },
+  "homepage": "https://github.com/fordefam12/financial-analytics-platform#readme",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "body-parser": "^1.20.2",
+    "chart.js": "^4.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-redux": "^9.1.2",
+    "winston": "^3.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}

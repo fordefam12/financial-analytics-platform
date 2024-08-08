@@ -1,0 +1,66 @@
+/* src/components/Dashboard.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dashboard header {
+  background-color: #4CAF50;
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.dashboard nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard nav ul li {
+  margin: 0 1rem;
+}
+
+.dashboard nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dashboard main {
+  padding: 2rem;
+}
+
+.analytics {
+  margin-bottom: 2rem;
+}
+
+.analytics-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+}
+
+.recent-transactions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-transactions ul li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
