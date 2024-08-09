@@ -1,14 +1,40 @@
-/* src/components/TransactionList.css */
-.transaction-list header {
-    background-color: #4CAF50;
-    padding: 1rem 0;
-    color: #fff;
+/* TransactionList.css */
+.transaction-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-list header {
     text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .transaction-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transaction-list ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .transaction-list ul li.income {
+    color: green;
+  }
+  
+  .transaction-list ul li.expense {
+    color: red;
   }
   
   .transaction-list nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
   }
@@ -18,25 +44,10 @@
   }
   
   .transaction-list nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #4CAF50;
   }
   
-  .transaction-list main {
-    padding: 2rem;
+  .transaction-list nav ul li a:hover {
+    text-decoration: underline;
   }
-  
-  .transaction-list table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .transaction-list table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  .transaction-list th, td {
-    padding: 1rem;
-    text-align: left;
-  }
-  

@@ -6,19 +6,17 @@ export const REGISTER_USER = 'REGISTER_USER';
 export const loginUser = (userData) => async (dispatch) => {
   try {
     const response = await axios.post('/api/auth/login', userData);
-    dispatch({ type: 'LOGIN_SUCCESS', payload: response.data });
+    dispatch({ type: LOGIN_USER, payload: response.data });
   } catch (error) {
-    dispatch({ type: 'LOGIN_FAILURE', payload: error.message });
+    console.error('Login failed', error);
   }
-  return {
-    type: 'LOGIN_USER',
-    payload: userData
-  };
 };
 
-export const registerUser = (userData) => {
-  return {
-    type: REGISTER_USER,
-    payload: userData,
-  };
+export const registerUser = (userData) => async (dispatch) => {
+  try {
+    const response = await axios.post('/api/auth/register', userData);
+    dispatch({ type: REGISTER_USER, payload: response.data });
+  } catch (error) {
+    console.error('Registration failed', error);
+  }
 };

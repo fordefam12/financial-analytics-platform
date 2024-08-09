@@ -4,7 +4,7 @@ import AnalyticsChart from './AnalyticsChart';
 import './Dashboard.css';
 
 const Dashboard = () => {
-  const data = {
+  const incomeData = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June'],
     datasets: [
       {
@@ -12,6 +12,12 @@ const Dashboard = () => {
         data: [5000, 6000, 7000, 8000, 9000, 10000],
         backgroundColor: 'rgba(75, 192, 192, 0.6)',
       },
+    ],
+  };
+
+  const expenseData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    datasets: [
       {
         label: 'Expenses',
         data: [2000, 3000, 4000, 5000, 6000, 7000],
@@ -43,6 +49,7 @@ const Dashboard = () => {
             <li><Link to="/transactions">Transactions</Link></li>
             <li><Link to="/login">Login</Link></li>
             <li><Link to="/register">Register</Link></li>
+            <li><Link to="/recover-password">Recover Password</Link></li>
           </ul>
         </nav>
       </header>
@@ -63,7 +70,10 @@ const Dashboard = () => {
               <p>$20,000</p>
             </div>
           </div>
-          <AnalyticsChart data={data} options={options} />
+          <h3>Income Chart</h3>
+          <AnalyticsChart data={incomeData} options={options} />
+          <h3>Expenses Chart</h3>
+          <AnalyticsChart data={expenseData} options={options} />
         </section>
         <section className="recent-transactions">
           <h2>Recent Transactions</h2>
